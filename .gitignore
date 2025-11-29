@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Byte-compiled
+*.py[cod]
+*$py.class
+
+# VS Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Local environment variables
+.env
+.env.local
+
+# Docker stuff
+*.log
+docker-data/
+pgdata/
+postgres-data/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Migrations (if using Alembic later)
+alembic.ini
+alembic/versions/
+
+# Cache files
+.cache/
+*.cache
