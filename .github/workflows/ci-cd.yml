@@ -23,10 +23,12 @@ jobs:
         pip install -r requirements.txt
         pip install pytest
 
-    - name: Set test database URL
-      run: echo "DATABASE_URL=sqlite:///./test.db" >> $GITHUB_ENV
+    - name: Install package
+      run: pip install .
 
     - name: Run tests
+      env:
+        DATABASE_URL: "sqlite:///./test.db"
       run: pytest
 
     - name: Build Docker image
